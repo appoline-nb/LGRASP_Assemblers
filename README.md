@@ -1,6 +1,5 @@
 # LGRASP_Assemblers
-Bambu / FLAIR / IsoQuant / StringTie
-
+Bambu / FLAIR / IsoQuant / StringTie /  
 Veuillez trouver les informations associées à l'évaluation des outils d'assemblage présentés dans le mémoire de M2 **"De la détection des isoformes à la classification : Apport du séquençage RNA ciblé long-read au diagnostic du syndrome HBOC"** (section 2.2.2 - page 9) — Appoline NABI
 
 ---
@@ -592,7 +591,7 @@ stringtie \
   -o {output.merged_gtf} \
   {input.batch1} {input.batch2}
 ```
-## 🇫🇷 MODULE D'ANNOTATION STRUCTURALE — SQANTI3 QC
+## 🇫🇷 MODULE D'ANNOTATION STRUCTURALE — SQANTI3 QC v5.5.3
 ```bash
 sqanti3_qc.py \
   --isoforms {input.gtf} \
@@ -624,7 +623,7 @@ prepDE.py \
 ```
 **Output**: two count matrices generated — gene-level and transcript-level.
 
-## 🇬🇧 STRUCTURAL ANNOTATION MODULE — SQANTI3 QC
+## 🇬🇧 STRUCTURAL ANNOTATION MODULE — SQANTI3 QC Sqanti v5.5.3
 ```bash
 sqanti3_qc.py \
   --isoforms {input.gtf} \
