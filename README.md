@@ -581,7 +581,7 @@ python3 scripts/SOSTAR.py \
 
 ---
 
-## STRINGTIE MERGE — CATALOGUE CONSTRUCTION FROM BATCH 1 AND BATCH 2
+## STRINGTIE MERGE — CATALOGUE CONSTRUCTION FROM BATCH 1 AND BATCH 2 (GTF FILES)
 
 ```bash
 stringtie \
@@ -592,7 +592,26 @@ stringtie \
   -o {output.merged_gtf} \
   {input.batch1} {input.batch2}
 ```
-
+## 🇫🇷 MODULE D'ANNOTATION STRUCTURALE — SQANTI3 QC
+```bash
+sqanti3_qc.py \
+  --isoforms {input.gtf} \
+  --refGTF {input.annotation} \
+  --force_id_ignore \
+  --refFasta {input.genome} \
+  --aligner_choice minimap2 \
+  --fl_count {input.matrix_raw_counts} \
+  --CAGE_peak {input.cage_peaks} \
+  --polyA_peak {input.polya_sites} \
+  --polyA_motif_list {input.polya_motifs} \
+  --phyloP_bed {input.phyloP_bed_hboc} \
+  --saturation \
+  --isoform_hits \
+  --report both \
+  --output {params.prefix} \
+  --dir {params.outdir} \
+  --cpus {threads}
+```
 ---
 
 ## FINAL COUNT MATRIX GENERATION — prepDE.py
@@ -603,5 +622,25 @@ prepDE.py \
   -g {output.gene_counts} \
   -t {output.transcript_counts}
 ```
-
 **Output**: two count matrices generated — gene-level and transcript-level.
+
+## 🇬🇧 STRUCTURAL ANNOTATION MODULE — SQANTI3 QC
+```bash
+sqanti3_qc.py \
+  --isoforms {input.gtf} \
+  --refGTF {input.annotation} \
+  --force_id_ignore \
+  --refFasta {input.genome} \
+  --aligner_choice minimap2 \
+  --fl_count {input.matrix_raw_counts} \
+  --CAGE_peak {input.cage_peaks} \
+  --polyA_peak {input.polya_sites} \
+  --polyA_motif_list {input.polya_motifs} \
+  --phyloP_bed {input.phyloP_bed_hboc} \
+  --saturation \
+  --isoform_hits \
+  --report both \
+  --output {params.prefix} \
+  --dir {params.outdir} \
+  --cpus {threads}
+```
