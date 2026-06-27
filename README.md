@@ -1,6 +1,6 @@
 # LGRASP_Assemblers
 Bambu / FLAIR / IsoQuant / StringTie /  
-Veuillez trouver les informations associées à l'évaluation des outils d'assemblage présentés dans le mémoire de M2 **"De la détection des isoformes à la classification : Apport du séquençage RNA ciblé long-read au diagnostic du syndrome HBOC"** (section 2.2.2 - page 9) — Appoline NABI - encadrants : Pr Sophie KRIEGER, Dr Camille AUCOUTURIER, Dr Raphael LEMAN (CLCC François Baclesse). 
+Veuillez trouver les informations associées à l'évaluation des outils d'assemblage présentés dans le mémoire de M2 **"De la détection des isoformes à la classification : Apport du séquençage RNA ciblé long-read au diagnostic du syndrome HBOC"** (section 2.2.2 - page 9) — Appoline NABI 
 
 ---
 
